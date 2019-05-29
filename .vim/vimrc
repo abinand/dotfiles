@@ -44,7 +44,7 @@ if has('syntax') && has('eval')
   packadd! matchit
 endif
 
-colorscheme molokai
+colorscheme monokai
 
 syntax enable
 
