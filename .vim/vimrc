@@ -62,7 +62,6 @@ set cursorline
 
 set ruler
 
-set path+=**
 set wildignore+=*/node_modules/*
 
 set wildmenu
@@ -76,8 +75,11 @@ set mouse=a
 
 nnoremap <leader><space> :nohlsearch<CR>
 
+nnoremap <leader>f :find 
+
 let g:netrw_liststyle=3
 let g:netrw_banner=0
+
 set backupdir=.backup/,~/.backup/,/tmp//
 set directory=.swp/,~/.swp/,/tmp//
 set undodir=.undo/,~/.undo/,/tmp//
