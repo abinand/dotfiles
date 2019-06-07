@@ -44,38 +44,34 @@ if has('syntax') && has('eval')
   packadd! matchit
 endif
 
+set runtimepath+=~/.vim/bundle/nerdtree
+
+let NERDTreeShowHidden=1
+
 colorscheme monokai
 
 syntax enable
 
 set tabstop=4
-
 set softtabstop=4
-
 set expandtab
 
 set number
-
 set showcmd
-
 set cursorline
-
 set ruler
-
-set wildignore+=*/node_modules/*
 
 set wildmenu
 
 set showmatch
-
 set incsearch
 set ignorecase
 
 set mouse=a
 
 nnoremap <leader><space> :nohlsearch<CR>
-
 nnoremap <leader>f :find 
+map <C-n> :NERDTreeToggle<CR>
 
 let g:netrw_liststyle=3
 let g:netrw_banner=0
