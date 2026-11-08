@@ -1,0 +1,10 @@
+# mappings to have up and down arrow searching through history:
+"\e[A": history-search-backward
+"\e[B": history-search-forward
+
+# mapping to have [Tab] and [Shift]+[Tab] to cycle through all the possible completions:
+set show-all-if-ambiguous on
+set completion-ignore-case on
+set menu-complete-display-prefix on
+"\t": menu-complete
+"\e[Z": menu-complete-backward
